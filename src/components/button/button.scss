@@ -1,0 +1,82 @@
+.button {
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: 0;
+
+  position: relative;
+  overflow: hidden;
+
+  border: 0px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: transparent;
+  border: 0px;
+  cursor: pointer;
+
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+
+  &--fullwidth {
+
+    width: 100%;
+
+  }
+
+  &:after {
+
+    opacity: 0;
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background: rgba(0, 0, 0, 0.1);
+    transition: .4s;
+    
+  }
+
+  &:hover {
+
+    &:after {
+
+      opacity: 1;
+      
+    }
+
+  }
+
+  &:active {
+
+    background: rgba(0, 0, 0,1);
+
+  }
+
+  &--red { background: #f44336; &:active { background: darken(#f44336, 10%); transform: scale(1.02); } } 
+  &--pink { background: #e91e63; &:active { background: darken(#e91e63, 10%); transform: scale(1.02); } }
+  &--purple { background: #9c27b0; &:active { background: darken(#9c27b0, 10%); transform: scale(1.02); } }  
+  &--deep-purple { background: #673ab7; &:active { background: darken(#673ab7, 10%); transform: scale(1.02); } }  
+  &--indigo { background: #3f51b5; &:active { background: darken(#3f51b5, 10%); transform: scale(1.02); } }  
+  &--blue { background: #2196f3; &:active { background: darken(#2196f3, 10%); transform: scale(1.02); } }  
+  &--light-blue { background: #03a9f4; &:active { background: darken(#03a9f4, 10%); transform: scale(1.02); } }  
+  &--cyan { background: #00bcd4; &:active { background: darken(#00bcd4, 10%); transform: scale(1.02); } }  
+  &--teal { background: #009688; &:active { background: darken(#009688, 10%); transform: scale(1.02); } }  
+  &--yegreenllow { background: #4caf50; &:active { background: darken(#4caf50, 10%); transform: scale(1.02); } }  
+  &--light-green { background: #8bc34a; &:active { background: darken(#8bc34a, 10%); transform: scale(1.02); } }  
+  &--lime { background: #cddc39; &:active { background: darken(#cddc39, 10%); transform: scale(1.02); } }    
+  &--yellow { background: #ffeb3b; &:active { background: darken(#ffeb3b, 10%); transform: scale(1.02); } }  
+  &--amber { background: #ffc107; &:active { background: darken(#ffc107, 10%); transform: scale(1.02); } }  
+  &--orange { background: #ff9800; &:active { background: darken(#ff9800, 10%); transform: scale(1.02); } }  
+  &--deep-orange { background: #ff5722; &:active { background: darken(#2196f3, 10%); transform: scale(1.02); } }  
+  &--deep-orange { background: #ff5722; &:active { background: darken(#2196f3, 10%); transform: scale(1.02); } }  
+  &--brown { background: #795548; &:active { background: darken(#795548, 10%); transform: scale(1.02); } }  
+  &--grey { background: #9e9e9e; &:active { background: darken(#9e9e9e, 10%); transform: scale(1.02); } }  
+  &--blue-grey { background: #607d8b; &:active { background: darken(#607d8b, 10%); transform: scale(1.02); } }  
+
+}
